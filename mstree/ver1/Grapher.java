@@ -11,23 +11,23 @@ public class Grapher extends JPanel{
 
     public void paint(Graphics g){
 
-	Escena mechita = new Escena("text5.txt");
-	Figura teAmo[] = mechita.regresarArregloDeObjetos();
+	Escena me = new Escena("text5.txt");
+	Figura tm[] = m.regresarArregloDeObjetos();
 
 	// hacerlo con un FOR para dibujar todas las lineas MENOS LA ÚLTIMA
-	for (int i = 0; i < teAmo[0].numCoordenadas - 1; i++) {
-	    	g.drawLine(teAmo[0].coordsX[i], // から
-			   teAmo[0].coordsY[i],
-			   teAmo[0].coordsX[i+1], // まで
-			   teAmo[0].coordsY[i+1]
+	for (int i = 0; i < tm[0].numCoordenadas - 1; i++) {
+	    	g.drawLine(tm[0].coordsX[i], // から
+			   tm[0].coordsY[i],
+			   tm[0].coordsX[i+1], // まで
+			   tm[0].coordsY[i+1]
 			   );
 	}
 	// dibujar la última línea
-	int maxcoors = teAmo[0].numCoordenadas;
-	g.drawLine(teAmo[0].coordsX[maxcoors - 1], // から
-		   teAmo[0].coordsY[maxcoors - 1],
-		   teAmo[0].coordsX[0], // まで
-		   teAmo[0].coordsY[0]
+	int maxcoors = tm[0].numCoordenadas;
+	g.drawLine(tm[0].coordsX[maxcoors - 1], // から
+		   tm[0].coordsY[maxcoors - 1],
+		   tm[0].coordsX[0], // まで
+		   tm[0].coordsY[0]
 		   );
 
 
