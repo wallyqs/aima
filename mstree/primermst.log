@@ -1,0 +1,119 @@
+cd e:/proyectos/mstree/
+e:/Sofuto(2007)/Java/bin/javaw.exe TSPlastHours
+
+266
+329
+437
+166
+515
+267
+249
+372
+495
+272
+item repetido
+item repetido
+item repetido
+item repetido
+item repetido
+item repetido
+item repetido
+item repetido
+0 , 236 , 256 , 46 , 235 , 
+236 , 0 , 127 , 0 , 0 , 
+256 , 127 , 0 , 285 , 20 , 
+46 , 0 , 285 , 0 , 0 , 
+235 , 0 , 20 , 0 , 0 , 
+Soy el Node 0 
+Numero vecinos = 4 
+Mi vecini #0 es 1 y weight = 236 
+Mi vecini #1 es 4 y weight = 235 
+Mi vecini #2 es 2 y weight = 256 
+Mi vecini #3 es 3 y weight = 46 
+Soy el Node 1 
+Numero vecinos = 2 
+Mi vecini #0 es 0 y weight = 236 
+Mi vecini #1 es 2 y weight = 127 
+Soy el Node 2 
+Numero vecinos = 4 
+Mi vecini #0 es 3 y weight = 285 
+Mi vecini #1 es 0 y weight = 256 
+Mi vecini #2 es 4 y weight = 20 
+Mi vecini #3 es 1 y weight = 127 
+Soy el Node 3 
+Numero vecinos = 2 
+Mi vecini #0 es 2 y weight = 285 
+Mi vecini #1 es 0 y weight = 46 
+Soy el Node 4 
+Numero vecinos = 2 
+Mi vecini #0 es 0 y weight = 235 
+Mi vecini #1 es 2 y weight = 20 
+This is my last chance... to find the MST tree
+Metiendo a UNSEEN al nodo # 0 
+Metiendo a UNSEEN al nodo # 1 
+Metiendo a UNSEEN al nodo # 2 
+Metiendo a UNSEEN al nodo # 3 
+Metiendo a UNSEEN al nodo # 4 
+0 , 1 , 2 , 3 , 4 , 
+Contenido Unseen :1 , 2 , 3 , 4 , 
+Contenido fringe :0 , 
+El menor de los paths es de 0 a 3 con costo 46 
+ y esta en la posicion 3 
+Contenido Unseen :
+Contenido fringe :1 , 4 , 2 , 3 , 
+Contenido mst :0 , 
+The Fringe :
+0 Path de 0 a 1 con costo 236 
+1 Path de 0 a 4 con costo 235 
+2 Path de 0 a 2 con costo 256 
+The MST :
+0 Path de 0 a 3 con costo 46 
+okokokokokok
+Contenido Unseen :
+Contenido fringe :1 , 4 , 2 , 2 , 0 , 
+Contenido mst :0 , 3 , 
+The Fringe: 
+0 Path de 0 a 1 con costo 236 
+1 Path de 0 a 4 con costo 235 
+2 Path de 0 a 2 con costo 256 
+3 Path de 3 a 2 con costo 285 
+The MST: 
+0 Path de 0 a 3 con costo 46 
+El menor de los paths es de 0 a 4 con costo 235 
+ y esta en la posicion 1 
+22222222222222222
+Contenido Unseen :
+Contenido fringe :1 , 2 , 
+Contenido mst :0 , 3 , 4 , 
+The Fringe :
+0 Path de 0 a 1 con costo 236 
+1 Path de 0 a 2 con costo 256 
+2 Path de 3 a 2 con costo 285 
+The MST :
+0 Path de 0 a 3 con costo 46 
+1 Path de 0 a 4 con costo 235 
+El menor de los paths es de 0 a 1 con costo 236 
+ y esta en la posicion 0 
+33333333333333333333333333333
+Contenido Unseen :
+Contenido fringe :
+Contenido mst :0 , 3 , 4 , 1 , 
+The Fringe :
+0 Path de 0 a 2 con costo 256 
+1 Path de 3 a 2 con costo 285 
+The MST :
+0 Path de 0 a 3 con costo 46 
+1 Path de 0 a 4 con costo 235 
+2 Path de 0 a 1 con costo 236 
+El menor de los paths es de 0 a 2 con costo 256 
+ y esta en la posicion 0 
+33333333333333333333333333333
+Contenido Unseen :
+Contenido fringe :
+Contenido mst :0 , 3 , 4 , 1 , 2 , 
+The Fringe :
+The MST :
+0 Path de 0 a 3 con costo 46 
+1 Path de 0 a 4 con costo 235 
+2 Path de 0 a 1 con costo 236 
+3 Path de 0 a 2 con costo 256 

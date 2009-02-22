@@ -1,0 +1,47 @@
+Bug #1:
+----------------------------
+33333333333333333333333333333
+Contenido Unseen :2 , 
+Contenido fringe :
+Contenido mst :0 , 3 , 4 , 1 , 
+The Fringe :
+The MST :
+0 Path de 0 a 3 con costo 56 
+1 Path de 3 a 4 con costo 57 
+2 Path de 0 a 1 con costo 68 
+Exception in thread "AWT-EventQueue-0" java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.entry(LinkedList.java:365)
+	at java.util.LinkedList.get(LinkedList.java:315)
+	at TSPlastHoursUltimate$FringeType.menorDeLosPaths(TSPlastHoursUltimate.java:623)
+	at TSPlastHoursUltimate.finalMSTmethod(TSPlastHoursUltimate.java:190)
+	at TSPlastHoursUltimate.paint(TSPlastHoursUltimate.java:378)
+Bug #2:
+---------------
+22222222222222222
+Contenido Unseen :
+Contenido fringe :1 , 
+Contenido mst :0 , 3 , 4 , 
+The Fringe :
+0 Path de 0 a 2 con costo 300 
+1 Path de 3 a 1 con costo 87 
+The MST :
+0 Path de 0 a 3 con costo 34 
+1 Path de 0 a 4 con costo 62 
+El menor de los paths es de 3 a 1 con costo 87 
+ y esta en la posicion 1 
+Exception in thread "AWT-EventQueue-0" java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.LinkedList.entry(LinkedList.java:365)
+
+Bug #3:
+---------
+The MST: 
+0 Path de 0 a 4 con costo 185 
+El menor de los paths es de 4 a 3 con costo 58 
+ y esta en la posicion 5 
+Exception in thread "AWT-EventQueue-0" java.lang.IndexOutOfBoundsException: Index: 5, Size: 5
+	at java.util.LinkedList.entry(LinkedList.java:365)
+	at java.util.LinkedList.get(LinkedList.java:315)
+	at TSPlastHoursUltimate.finalMSTmethod(TSPlastHoursUltimate.java:156)
+	at TSPlastHoursUltimate.finalMSTmethod(TSPlastHoursUltimate.java:183)
+	at TSPlastHoursUltimate.finalMSTmethod(TSPlastHoursUltimate.java:200)
+	at TSPlastHoursUltimate.paint(TSPlastHoursUltimate.java:378)
