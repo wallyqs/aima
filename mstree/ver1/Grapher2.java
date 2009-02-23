@@ -11,27 +11,27 @@ public class Grapher2 extends JPanel{
 
     public void paint(Graphics g){
 
-	Escena mechita = new Escena("text5good.txt");
-	Figura teAmo[] = mechita.regresarArregloDeObjetos();
+	Escena m = new Escena("text5good.txt");
+	Figura tm[] = m.regresarArregloDeObjetos();
 	int k = 0;
-	System.out.printf(mechita.numeroObjetos + "");
+	System.out.printf(m.numeroObjetos + "");
 	System.out.printf("ijijijijijijij");
 	// for que se ejecuta por cada uno de los objetos
-	// for (int k = 0; k < mechita.numeroObjetos; k++) {
+	// for (int k = 0; k < m.numeroObjetos; k++) {
 	    // hacerlo con un FOR para dibujar todas las lineas MENOS LA ÚLTIMA
-	    for (int i = 0; i < teAmo[k].numCoordenadas - 1; i++) {
-	    	g.drawLine(teAmo[k].coordsX[i], //
-			   teAmo[k].coordsY[i],
-			   teAmo[k].coordsX[i+1], //
-			   teAmo[k].coordsY[i+1]
+	    for (int i = 0; i < tm[k].numCoordenadas - 1; i++) {
+	    	g.drawLine(tm[k].coordsX[i], //
+			   tem[k].coordsY[i],
+			   tem[k].coordsX[i+1], //
+			   tem[k].coordsY[i+1]
 			   );
 	    }
 	    // dibujar la última línea
 	    int maxcoors = teAmo[k].numCoordenadas;
-	    g.drawLine(teAmo[k].coordsX[maxcoors - 1], //
-		       teAmo[k].coordsY[maxcoors - 1],
-		       teAmo[k].coordsX[0], //
-		       teAmo[k].coordsY[0]
+	    g.drawLine(tm[k].coordsX[maxcoors - 1], //
+		       tm[k].coordsY[maxcoors - 1],
+		       tm[k].coordsX[0], //
+		       tm[k].coordsY[0]
 		       );
 	// }
 
