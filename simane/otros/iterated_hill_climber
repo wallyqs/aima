@@ -1,0 +1,21 @@
+procedure iteratedhillclimber
+begin
+   t = 0
+   initialize best
+   repeat
+      local = FALSE
+      select a current point Vc at random
+      evaluate Vc
+      repeat
+         select all new points in the neighborhood of Vc
+         select the point Vn from the set of new points
+         with the best value of evaluation function eval
+         if eval(Vn) is better than eval(Vc)
+            then Vc = Vn
+         else local = TRUE
+	 until local
+      t = t + 1
+      if Vc is better than best
+	 then best = Vc
+      until t = MAX
+end
