@@ -1,0 +1,85 @@
+% Created 2010-05-11 火 23:52
+\documentclass[journal]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{verbatim}
+
+
+
+\title{Comparison of the Genetic algorithm and Simulated Annealing for solving TSP problems}
+\author{Waldemar Quevedo Salinas  \\a01084463@itesm.mx}
+\date{11 5月 2010}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+Simulated Annealing and Genetic Algorithms are two very famous
+algorithms for solving combinatorial optimization problems. In this paper, 
+each algorithm is applied to a specific instance of a TSP problem
+to elucidate what are some of the pros and cons from using either approach.
+\end{abstract}
+
+\section{Introduction}
+\label{sec-1}
+
+
+
+Problem solving is hard. It is said that one of the main reasons of
+why it is hard is because we do not know where to even
+begin. It is a very creative intense process getting from point A to point B and
+figuring out how to get there is a very interesting challenge, for we
+have to take into consideration all the possible data and information 
+about the world as much as possible. We have to review all the information
+provided, work out relationships within these data and to find the way
+to connect the goal and with the current information about the problem.
+
+According to Dr.Michalewicsz from his remarkable \emph{How to Solve it} book,
+a problem gets complicated because of some of the following reasons:
+
+\begin{itemize}
+\item There are so many  possible solutions that the \emph{search space} makes
+  exhaustive search unfeasible.
+\item The \emph{evaluation function} changes from time to time, requiring not a single
+  solution but a set of them
+\item Finding a single non-optimal solution is already difficult as it is.
+\end{itemize}
+So when given the task of solving a problem, we have to take into consideration
+the \textbf{search space} of the problem, the \textbf{function to evaluate} 
+the quality of a solution and more important what is the \textbf{model} of the
+problem.
+
+\section{Traveling Salesman Problem}
+\label{sec-2}
+
+
+The TSP \footnote{Other forms of models are the satisfiability problem (SAT) and non-linear
+programming (NLP) } is very useful model when learning algorithms for problem solving 
+since it involves a very simple concept: a salesman has to visit certain 
+number of cities exactly once time and then return home using the 
+shortest path possible. 
+
+The search space of a TSP is the all the possible path that there are 
+to solve the unconstrained problem and its evaluation function would be 
+the total distance traveled by the traveling salesman from start to finish.
+
+
+
+
+
+
+
+
+\begin{thebibliography}{1}
+\bibitem{IEEEhowto:kopka}
+ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+ 0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\end{thebibliography}
+
+   
+
+
+
+\end{document}

@@ -1,0 +1,53 @@
+#+LaTeX_CLASS: journal
+#+TITLE: Ejemplo de lo que quiero escribir
+#+AUTHOR: Waldemar Quevedo Salinas
+#+LaTeX_CLASS_OPTIONS: [journal]{IEEEtran}
+
+#+begin_LaTeX
+\begin{abstract}
+Holaholahola
+\end{abstract}
+#+end_LaTeX
+
+* This is the first structural section
+
+blah blah blah blah blah blah blah blah blah
+blah blah blahblah blah blahblah blah blah[fn:1]
+
+[fn:1] wakawkawkawkawakpokopkopk
+
+** UNo
+oijoijoijsdfoijsdfoij
+blah blah blahblah blah blahblah blah blah
+blah blah blahblah blah blahblah blah blah
+blah blah blahblah blah blahblah blah blah
+
+***  uno a 
+for the first viable beamer setup in Org
+blah blah blahblah blah blahblah blah blah
+blah blah blahblah blah blahblah blah blah
+
+*** dos a
+or contributing to the discussion
+blah blah blahblah blah blahblah blah blah
+blah blah blahblah blah blahblah blah blah
+    
+**** This will be formatted as a beamer note                  
+oijoijoijsdfojasodifj
+blah blah blahblah blah blahblah blah blah
+
+*  Where we will not use columns
+
+** Request                                                   
+Please test this stuff!
+
+
+#+begin_LaTeX
+\begin{thebibliography}{1}
+\bibitem{IEEEhowto:kopka}
+ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+ 0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\end{thebibliography}
+#+end_LaTeX
+
+   

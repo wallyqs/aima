@@ -1,0 +1,125 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[spanish]{babel}
+\usepackage{CJK}
+%% \selectlanguage{spanish}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+%% \ifCLASSINFOpdf
+%% \else
+%% \fi
+\hyphenation{op-tical net-works semi-conduc-tor}
+\begin{document}
+\title{<%= @reporte.title.nil? ? 'Untitled' : @reporte.title %> }
+\author{
+ <%= "#{@reporte.user.first_name} #{@reporte.user.last_name}" unless ( @reporte.user.first_name.nil? || @reporte.user.last_name.nil?)%> ~\IEEEmembership{}% <-this % stops a space
+  \thanks{ }% <-this % stops a space
+}
+\markboth{
+  %% Sistemas Multiagentes \LaTeX\ Enero 2010
+  <%= @reporte.updated_at.to_date %>
+}%
+         {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+         \maketitle
+
+
+         <% if !@reporte.abstract.nil? -%>
+         \begin{abstract}
+           <%= @reporte.abstract unless @reporte.abstract.nil? %>
+         \end{abstract}
+         <% end -%>
+
+         <% if !@reporte.keywords.nil? -%>
+         \begin{IEEEkeywords}
+           <%= @reporte.keywords unless @reporte.keywords.nil? %>
+         \end{IEEEkeywords}
+         <% end -%>
+
+         %% \section{Introduction}
+
+         %% \IEEEPARstart{T}{his}
+
+         <%= RedCloth.new(@reporte.content, [:filter_html]).to_latex %>
+         
+         %% demo file is intended to serve as a ``starter file''
+         %% for IEEE journal papers produced under \LaTeX\ using
+         %% IEEEtran.cls version 1.7 and later.
+
+         %% \hfill mds
+         %% \hfill January 11, 2007
+         %% \subsection{Subsection Heading Here}
+         %% Subsection text here.
+         %% \subsubsection{Subsubsection Heading Here}
+         %% Subsubsection text here.
+
+         %% \section{Conclusiones}
+         %% The conclusion goes here.
+
+         %% \appendices
+         %% \section{Proof of the First Zonklar Equation}
+         %% Appendix one text goes here.
+         %% \section{}
+         %% Appendix two text goes here.
+         %% \section*{Acknowledgment}
+         %% The authors would like to thank...
+         %% \ifCLASSOPTIONcaptionsoff
+         %% \newpage
+         %% \fi
+
+         <% if !@reporte.bibliography.nil? -%>
+         \begin{thebibliography}{1}
+         %% \bibitem{IEEEhowto:kopka}
+         %%   H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+         %%   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+         %% \bibitem{IEEEhowto:kopka}
+         %%   H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+         %%   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+           <%= @reporte.bibliography unless @reporte.bibliography.nil? %>
+         \end{thebibliography}
+         <% end -%>
+
+         %% \begin{IEEEbiography}{Waldemar Quevedo Salinas}
+         %%   Nada Realmente
+         %% \end{IEEEbiography}
+
+         %% \begin{IEEEbiographynophoto}{Waldemar Quevedo Salinas}
+         %%   Nada realmente.
+         %% \end{IEEEbiographynophoto}
+         
+\end{document}
+
+%% \documentclass[10pt]{article}
+%% \usepackage[spanish]{babel}
+%% \usepackage{CJK}
+%% %% \selectlanguage{spanish}
+%% \usepackage{ucs}
+%% \usepackage[utf8x]{inputenc}
+%% \title{ <%= @reporte.title.nil? ? 'Untitled' : @reporte.title %>}
+%% \author{
+%%   <%= "#{@reporte.user.first_name} #{@reporte.user.last_name}" unless ( @reporte.user.first_name.nil? || @reporte.user.last_name.nil?)%> 
+%% \\ }
+%% \date{<%= @reporte.updated_at.to_date %>}
+%% \begin{document}
+%% %% \begin{CJK*}{UTF8}{min}
+%% \maketitle
+%% %% \begin{abstract}
+%% %%   \emph{
+%% %%     No hay...
+%% %% }
+%% %% \end{abstract}
+
+%% <%= RedCloth.new(@reporte.content, [:filter_html]).to_latex %>
+
+%% %% \end{CJK*}
+%% \end{document}
+
+
+%%% Local Variables:
+%%% coding: utf-8
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+
+
+

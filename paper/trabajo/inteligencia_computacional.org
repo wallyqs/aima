@@ -1,0 +1,83 @@
+#+LaTeX_CLASS: journal
+#+TITLE: Comparison of the Genetic algorithm and Simulated Annealing for solving TSP problems
+#+AUTHOR: Waldemar Quevedo Salinas  \\a01084463@itesm.mx
+#+LaTeX_CLASS_OPTIONS: [journal]{IEEEtran}
+#+OPTIONS: toc:nil
+
+#+begin_LaTeX
+\begin{abstract}
+Simulated Annealing and Genetic Algorithms are two very famous
+algorithms for solving combinatorial optimization problems. In this paper, 
+each algorithm is applied to a specific instance of a TSP problem
+to elucidate what are some of the pros and cons from using either approach.
+\end{abstract}
+#+end_LaTeX
+
+* Introduction
+
+# Aqui voy a traerme la introduccion de lo que esta en el How to solve it 
+# un resumen de la introduccion de ese libro
+
+Problem solving is hard. It is said that one of the main reasons of
+why it is hard is because we do not know where to even
+begin. It is a very creative intense process getting from point A to point B and
+figuring out how to get there is a very interesting challenge, for we
+have to take into consideration all the possible data and information 
+about the world as much as possible. We have to review all the information
+provided, work out relationships within these data and to find the way
+to connect the goal and with the current information about the problem.
+
+According to Dr.Michalewicsz from his remarkable /How to Solve it/ book,
+a problem gets complicated because of some of the following reasons:
+
+- There are so many  possible solutions that the /search space/ makes
+  exhaustive search unfeasible.
+
+- The /evaluation function/ changes from time to time, requiring not a single
+  solution but a set of them
+
+- Finding a single non-optimal solution is already difficult as it is.
+
+So when given the task of solving a problem, we have to take into consideration
+the *search space* of the problem, the *function to evaluate* 
+the quality of a solution and more important what is the *model* of the
+problem.
+
+* Traveling Salesman Problem
+
+The TSP [fn:1] is very useful model for when learning algorithms for problem solving 
+since it involves a very simple concept: a salesman has to visit certain 
+number of cities exactly once time and then return home using the 
+shortest path possible. 
+
+[fn:1] Other forms of models are the satisfiability problem (SAT) and non-linear
+programming (NLP)
+
+The search space of a TSP is the all the possible path that there are 
+to solve the unconstrained problem and its evaluation function would be 
+the total distance traveled by the traveling salesman from start to finish.
+
+The TSP is considered to be NP class problem, so exhaustive search is 
+not an option. The approach to take is then to `cut' as much as we can 
+the search space to try to find an optimal solution.
+
+The instance of the problem will be 30 cities which is not bad
+
+
+
+
+
+
+
+
+# how to solve it para simulated annealing 
+# Genetic Programming para lo otro
+#+begin_LaTeX
+\begin{thebibliography}{1}
+\bibitem{IEEEhowto:kopka}
+ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+ 0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\end{thebibliography}
+#+end_LaTeX
+
+   

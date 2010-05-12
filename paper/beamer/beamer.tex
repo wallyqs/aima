@@ -1,0 +1,66 @@
+% Created 2010-05-11 火 20:01
+\documentclass[11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+
+
+\title{Example Presentation}
+\author{Carsten Dominik}
+\date{11 5月 2010}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+\vspace*{1cm}
+
+\section{This is the first structural section}
+\label{sec-1}
+
+
+\begin{frame}\frametitle{Frame 1 \\ with a subtitle}
+\label{sec-1.1}
+
+
+\begin{itemize}
+
+\item Thanks to Eric Fraga\\
+\label{sec-1.1.1}
+
+    for the first viable beamer setup in Org
+
+
+\item Thanks to everyone else\\
+\label{sec-1.1.2}
+
+    for contributing to the discussion
+    
+\begin{itemize}
+
+\item This will be formatted as a beamer note\\
+\label{sec-1.1.2.1}
+
+
+\end{itemize} % ends low level
+\end{itemize} % ends low level
+\end{frame}
+\begin{frame}\frametitle{Frame 2 \\ where we will not use columns}
+\label{sec-1.2}
+
+
+\begin{itemize}
+
+\item Request\\
+\label{sec-1.2.1}
+
+    Please test this stuff!
+    
+\end{itemize} % ends low level
+\end{frame}
+
+\end{document}

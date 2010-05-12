@@ -1,0 +1,38 @@
+#+LaTeX_CLASS: beamer
+#+TITLE: Example Presentation
+#+AUTHOR: Carsten Dominik
+#+LaTeX_CLASS_OPTIONS: [presentation]
+#+BEAMER_FRAME_LEVEL: 2
+#+BEAMER_HEADER_EXTRA: \usetheme{Madrid}\usecolortheme{default}
+#+COLUMNS: %35ITEM %10BEAMER_env(Env) %10BEAMER_envargs(Args) %4BEAMER_col(Col) %8BEAMER_extra(Ex)
+
+* This is the first structural section
+
+** Frame 1 \\ with a subtitle
+
+*** Thanks to Eric Fraga                                      
+    :PROPERTIES:
+    :BEAMER_env: block
+    :BEAMER_envargs: C[t]
+    :BEAMER_col: 0.5
+    :END:
+    for the first viable beamer setup in Org
+
+*** Thanks to everyone else				      
+    :PROPERTIES:
+    :BEAMER_col: 0.5
+    :BEAMER_env: block
+    :BEAMER_envargs: <2->
+    :END:
+    for contributing to the discussion
+    
+**** This will be formatted as a beamer note                  
+
+** Frame 2 \\ where we will not use columns
+
+*** Request                                                   
+    Please test this stuff!
+    :PROPERTIES:
+    :BEAMER_env: block
+    :END:
+    
